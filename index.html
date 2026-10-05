@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HOMÉA — Beautiful Things for Your Home</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            HOMÉA<span>.</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-btn" id="searchBtn">
+                🔍
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                ✦ CURATED FOR YOUR SPACE
+            </p>
+
+            <h1>
+                Make your home
+                <span>feel like home.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover beautiful, functional pieces designed to bring
+                warmth, comfort and personality into every corner of your home.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="primary-btn">
+                    Explore Collection →
+                </a>
+
+                <a href="#categories" class="secondary-btn">
+                    View Categories
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="image-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+                    alt="Beautiful home interior"
+                >
+
+                <div class="floating-card">
+
+                    <span>✦</span>
+
+                    <div>
+                        <strong>New Collection</strong>
+                        <p>Warm & Minimal</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">SHOP BY CATEGORY</p>
+
+                <h2>
+                    Find your <i>favorite</i> pieces.
+                </h2>
+            </div>
+
+            <p>
+                Everything you need to create a space
+                that feels uniquely yours.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card"
+                 data-category="Furniture">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                    alt="Furniture"
+                >
+
+                <div class="category-overlay">
+                    <h3>Furniture</h3>
+                    <span>Explore →</span>
+                </div>
+
+            </div>
+
+
+            <div class="category-card"
+                 data-category="Lighting">
+
+                <img
+                    src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80"
+                    alt="Lighting"
+                >
+
+                <div class="category-overlay">
+                    <h3>Lighting</h3>
+                    <span>Explore →</span>
+                </div>
+
+            </div>
+
+
+            <div class="category-card"
+                 data-category="Decor">
+
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+                    alt="Home Decor"
+                >
+
+                <div class="category-overlay">
+                    <h3>Decor</h3>
+                    <span>Explore →</span>
+                </div>
+
+            </div>
+
+
+            <div class="category-card"
+                 data-category="Kitchen">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=800&q=80"
+                    alt="Kitchen"
+                >
+
+                <div class="category-overlay">
+                    <h3>Kitchen</h3>
+                    <span>Explore →</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">OUR COLLECTION</p>
+
+                <h2>
+                    Pieces you'll <i>love.</i>
+                </h2>
+            </div>
+
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter" data-filter="Furniture">
+                    Furniture
+                </button>
+
+                <button class="filter" data-filter="Lighting">
+                    Lighting
+                </button>
+
+                <button class="filter" data-filter="Decor">
+                    Decor
+                </button>
+
+                <button class="filter" data-filter="Kitchen">
+                    Kitchen
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- PRODUCT 1 -->
+
+            <article class="product-card" data-category="Furniture">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        Bestseller
+                    </span>
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85"
+                        alt="Cloud Sofa"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Furniture</p>
+
+                    <h3>Cloud Comfort Sofa</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$649</strong>
+
+                        <button class="add-btn"
+                                data-product="Cloud Comfort Sofa">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="product-card" data-category="Lighting">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        New
+                    </span>
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85"
+                        alt="Table Lamp"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Lighting</p>
+
+                    <h3>Arco Table Lamp</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$129</strong>
+
+                        <button class="add-btn"
+                                data-product="Arco Table Lamp">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="product-card" data-category="Decor">
+
+                <div class="product-image">
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=85"
+                        alt="Wall Art"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Decor</p>
+
+                    <h3>Abstract Canvas Art</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$89</strong>
+
+                        <button class="add-btn"
+                                data-product="Abstract Canvas Art">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card" data-category="Kitchen">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        Popular
+                    </span>
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=800&q=85"
+                        alt="Ceramic mugs"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Kitchen</p>
+
+                    <h3>Handmade Ceramic Set</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$59</strong>
+
+                        <button class="add-btn"
+                                data-product="Handmade Ceramic Set">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="product-card" data-category="Furniture">
+
+                <div class="product-image">
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=85"
+                        alt="Wooden chair"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Furniture</p>
+
+                    <h3>Oak Lounge Chair</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$299</strong>
+
+                        <button class="add-btn"
+                                data-product="Oak Lounge Chair">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="product-card" data-category="Decor">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        New
+                    </span>
+
+                    <button class="heart">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85"
+                        alt="Home decor"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p>Decor</p>
+
+                    <h3>Minimal Ceramic Vase</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>$45</strong>
+
+                        <button class="add-btn"
+                                data-product="Minimal Ceramic Vase">
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURE ================= -->
+
+    <section class="feature">
+
+        <div class="feature-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1200&q=85"
+                alt="Home interior"
+            >
+
+        </div>
+
+        <div class="feature-content">
+
+            <p class="small-title">
+                DESIGNED TO LAST
+            </p>
+
+            <h2>
+                Your space deserves
+                <i>beautiful things.</i>
+            </h2>
+
+            <p>
+                We carefully select every piece in our collection.
+                From timeless furniture to little decorative details,
+                everything is chosen to make your everyday space
+                more beautiful.
+            </p>
+
+            <div class="feature-list">
+
+                <div>
+                    <span>01</span>
+                    <p>Thoughtfully designed</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Quality materials</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Made for everyday living</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div>
+
+            <p class="small-title">
+                STAY INSPIRED
+            </p>
+
+            <h2>
+                Little things.
+                <i>Big difference.</i>
+            </h2>
+
+            <p>
+                Get new arrivals, home inspiration and exclusive offers
+                straight to your inbox.
+            </p>
+
+        </div>
+
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="about">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    HOMÉA<span>.</span>
+                </div>
+
+                <p>
+                    Beautiful pieces for spaces
+                    you'll love coming home to.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Help</h4>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Follow</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 HOMÉA. All rights reserved.</p>
+
+            <p>Made with ♥ for beautiful homes.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART POPUP ================= -->
+
+    <div class="cart-popup" id="cartPopup">
+
+        <div class="cart-box">
+
+            <button class="close-cart" id="closeCart">
+                ×
+            </button>
+
+            <p class="small-title">
+                YOUR BAG
+            </p>
+
+            <h2>
+                Shopping Cart
+            </h2>
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn">
+                Checkout →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SEARCH POPUP ================= -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-container">
+
+            <button id="closeSearch">
+                ×
+            </button>
+
+            <p class="small-title">
+                SEARCH HOMÉA
+            </p>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <div id="searchResults"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
